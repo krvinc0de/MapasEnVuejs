@@ -9,14 +9,15 @@
       <div class="text-center">
         <div>
           <h4>TU POSICION ES:</h4>
-            Latitude: {{currPos.lat.toFixed(10)}},
-            Longitude: {{ currPos.lng.toFixed(10)}},
+            {{ currPos.lng.toFixed(13)}},<br>
+            {{currPos.lat.toFixed(13)}}
         </div>
         <div>
           <h4>TU POSICION CLICKEADA:</h4>
           <span v-if="otherPos">
-            Latitude: {{ otherPos.lat.toFixed(10)}},
-            Longitude: {{ otherPos.lng.toFixed(10)}},
+            [<br>
+            {{otherPos.lng.toFixed(13)}},<br>
+            {{otherPos.lat.toFixed(13)}}<br>]
           </span>
           <span v-else>
             Dale click en una posicion en la pantalla
